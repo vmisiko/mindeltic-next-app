@@ -22,7 +22,7 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <Container maxWidth="md" sx={{ mt: 4 }}>
+    <Container maxWidth="md" sx={{ mt: 9 }}>
       <Typography variant="h4" align="center" gutterBottom>
         Psychologists Feedback
       </Typography>
