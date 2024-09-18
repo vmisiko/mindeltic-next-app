@@ -5,6 +5,8 @@ import CssBaseline from "@mui/material/CssBaseline";
 import theme from "@/theme";
 import Navbar from "@/presentation/components/Navbar";
 import { PsychologistProvider } from "@/presentation/providers/psychologyProvider";
+import { Box, Typography } from "@mui/material";
+import Footer from "@/presentation/components/Footer";
 
 export default function RootLayout(props) {
   return (
@@ -16,6 +18,7 @@ export default function RootLayout(props) {
             <CssBaseline />
             <Navbar />
             <PsychologistProvider>{props.children}</PsychologistProvider>
+            <Footer />
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
