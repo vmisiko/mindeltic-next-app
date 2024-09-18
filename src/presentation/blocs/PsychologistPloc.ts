@@ -29,8 +29,13 @@ export const usePsychologistBloc = () => {
             loading: false,
             error: error.message,
           })),
-        (data) =>
-          setState((prev) => ({ ...prev, loading: false, psychologists: data }))
+        (data) => {
+          setState((prev) => ({
+            ...prev,
+            loading: false,
+            psychologists: data,
+          }));
+        }
       );
     } catch (error) {
       setState((prev) => ({ ...prev, loading: false, error: error }));

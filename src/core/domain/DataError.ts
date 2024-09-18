@@ -1,3 +1,4 @@
+//Add more granular error types as needed
 export class UnexpectedError extends Error {
   kind: "UnexpectedError";
   message: string;
